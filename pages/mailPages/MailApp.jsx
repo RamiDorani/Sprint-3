@@ -1,6 +1,6 @@
-import {Search} from '../cmps/mailCMPs/MailSearch.jsx'
-import {mailService} from '../services/mail-service.js'
-import {MailList} from '../cmps/mailCMPs/MailList.jsx'
+import {Search} from '../../cmps/mailCMPs/MailSearch.jsx'
+import {mailService} from '../../services/mail-service.js'
+import {MailList} from '../../cmps/mailCMPs/MailList.jsx'
 
 export class MailApp extends React.Component {
     state = {
@@ -24,7 +24,7 @@ export class MailApp extends React.Component {
 
   getMailsForDisplay() {
     const mails = this.state.mails.filter((mail) =>
-      mail.subject.includes(this.state.filterBy)
+      mail.subject.toLowerCase().includes(this.state.filterBy.toLowerCase())
     );
     return mails;
   }
@@ -35,8 +35,8 @@ export class MailApp extends React.Component {
             //console.log(mails);
         return (
             <div>
-                <Search  onFilter={this.setFilter}/>
                 <h1>MAIL APP</h1>
+                <Search  onFilter={this.setFilter}/>
                 <main>
                 <MailList mails={mails} />
                 </main>

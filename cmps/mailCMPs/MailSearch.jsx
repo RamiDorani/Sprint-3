@@ -1,4 +1,4 @@
-export function Search() {
+export function Search(props) {
     return (
         <form>
              <section className="book-filter">

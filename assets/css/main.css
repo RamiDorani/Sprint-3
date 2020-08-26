@@ -1,3 +1,46 @@
+
+@import "./mailStyle/mailDetailes.css";
+@import "./mailStyle/mailList.css";
+
+/*BASE*/
+
 body {
     background-color: lightblue;
+}
+.main-nav>* {
+    margin-left: 10px;
+}
+
+
+/*COMPONENT*/
+
+.search-input {
+    position: absolute;
+    top: 0;
+    left : 50%;
+}
+
+
+
+/*HELPERS*/ 
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }

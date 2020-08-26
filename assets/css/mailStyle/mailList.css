@@ -1,0 +1,14 @@
+
+@import '../main.css';
+
+
+.mail-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.mail-preview {
+    border: 1px solid black;
+}
