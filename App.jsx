@@ -1,9 +1,9 @@
 const Router = ReactRouterDOM.HashRouter;
 const { Route, Switch } = ReactRouterDOM;
 
-import { Header } from "./cmps/AppHeader.jsx";
+import { Header } from "./cmps/jointCMPs/AppHeader.jsx";
 import {HomePage} from './pages/Home.jsx'
-import {KeepApp} from './pages/MissKeep.jsx'
+import {KeepApp} from './pages/keepPages/MissKeep.jsx'
 import {MailApp} from './pages/mailPages/MailApp.jsx'
 import {MailDetailes} from './pages/mailPages/MailDetailes.jsx'
 
