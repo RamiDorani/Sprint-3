@@ -1,13 +1,6 @@
-<<<<<<< HEAD:pages/MissKeep.jsx
 import { Search } from '../cmps/jointCMPs/search.jsx'
-import { Input } from '../cmps/missKeep/input.jsx'
-import { missKeepService } from '../services/missKeep-service.js'
-import { NoteList } from '../cmps/missKeep/noteList.js'
-=======
-import { Search } from '../../cmps/jointCMPs/search.jsx'
-import { Input } from '../../cmps/missKeep/input.jsx'
-import { missKeepService } from '../../services/missKeep-service.js'
->>>>>>> c6c9630e1706d6e904269ba335aa683612594741:pages/keepPages/MissKeep.jsx
+import { missKeepService } from '../services/missKeep-service.jsx'
+import { NoteList } from '../../cmps/keepCMPs/NoteList.jsx'
 
 export class KeepApp extends React.Component {
 
