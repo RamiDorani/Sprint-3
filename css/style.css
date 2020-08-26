@@ -3,3 +3,27 @@
 .main-nav>* {
     margin-left: 10px;
 }
+
+
+/*COMPONENT*/
+
+.search-input {
+    position: absolute;
+    top: 0;
+    left : 50%;
+}
+
+
+/*HELPERS*/ 
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}

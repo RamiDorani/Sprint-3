@@ -3,8 +3,8 @@ const { NavLink, withRouter } = ReactRouterDOM
 
  function _Header() {
     return (
-       <header>
-            <h1>Miss Book-Shop</h1>
+       <header className="main-header flex space-between">
+            <h1>APSUS</h1>
         <nav className="main-nav">
             <NavLink exact to="/">Home</NavLink>
             <NavLink exact to="/mail">Mail</NavLink>
