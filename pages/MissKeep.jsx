@@ -5,7 +5,6 @@ export class KeepApp extends React.Component {
         return (
             <div>
                 <h1>KEEP APP</h1>
-                <h1>hi</h1>
             </div>
         )
     }
