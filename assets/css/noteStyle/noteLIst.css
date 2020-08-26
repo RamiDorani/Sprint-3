@@ -1,0 +1,18 @@
+@import '../main.css';
+
+
+.note-list {
+    text-align: center;
+    column-count: 3;
+    column-gap: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 20px solid beige;
+
+}
+
+.note-preview {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}

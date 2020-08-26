@@ -6,7 +6,7 @@ export const missKeepService = {
 
 var notes = [
     {id: utils.makeId(), type: "NoteText", isPinned: true, info: {txt: "i'm a note 1"} },
-    {id: utils.makeId(), type: "NoteText", isPinned: true, info: {txt: "i'm a note 2"} },
+    // {id: utils.makeId(), type: "NoteImg", url:"https://images.app.goo.gl/QW5t6kPUzBHTXzUs5", title:"sea", isPinned: true },
     {id: utils.makeId(), type: "NoteText", isPinned: true, info: {txt: "i'm a note 3"} },
     {id: utils.makeId(), type: "NoteText", isPinned: true, info: {txt: "i'm a note 4"} },
     {id: utils.makeId(), type: "NoteText", isPinned: true, info: {txt: "i'm a note 5"} },
@@ -20,3 +20,4 @@ var notes = [
 function query() {
     return Promise.resolve(notes);
 }
+

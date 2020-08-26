@@ -1,6 +1,3 @@
-// import { Search } from '../cmps/jointCMPs/search.jsx'
-// import { missKeepService } from '../services/missKeep-service.jsx'
-// import { NoteList } from '../cmps/keepCMPs/NoteList.js
 
 import {Search} from '../../cmps/jointCMPs/search.jsx'
 import {missKeepService} from '../../services/missKeep-service.js'
