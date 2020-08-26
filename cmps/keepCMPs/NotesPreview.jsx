@@ -1,7 +1,8 @@
 
+
 export function NotePreview({note}) {
     return (
-         <section >
+         <section className="note-preview" >
             <p>{note.info.txt}</p>
          </section>
          )

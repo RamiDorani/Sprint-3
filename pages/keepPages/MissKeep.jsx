@@ -1,6 +1,11 @@
-import { Search } from '../cmps/jointCMPs/search.jsx'
-import { missKeepService } from '../services/missKeep-service.jsx'
-import { NoteList } from '../../cmps/keepCMPs/NoteList.jsx'
+// import { Search } from '../cmps/jointCMPs/search.jsx'
+// import { missKeepService } from '../services/missKeep-service.jsx'
+// import { NoteList } from '../cmps/keepCMPs/NoteList.js
+
+import {Search} from '../../cmps/jointCMPs/search.jsx'
+import {missKeepService} from '../../services/missKeep-service.js'
+import {NoteList} from '../../cmps/keepCMPs/NoteList.jsx'
+
 
 export class KeepApp extends React.Component {
 
@@ -15,7 +20,10 @@ export class KeepApp extends React.Component {
 
     loadNotes() {
         missKeepService.query()
-            .then(notes => this.setState({ notes }))
+            .then(notes => {
+                console.log(notes);
+                this.setState({ notes })
+            })
     }
 
     setFilter = (filterBy) => {
@@ -34,11 +42,11 @@ export class KeepApp extends React.Component {
         
         return (
             <div>
-                <Search />
+                <Search onFilter={this.setFilter} />
                 <h1>KEEP APP</h1>
-                <Input></Input>
+                {/* <Input></Input> */}
                 <main>
-                <NoteList notes={note} />
+                <NoteList notes={notes} />
                 </main>
 
             </div>
