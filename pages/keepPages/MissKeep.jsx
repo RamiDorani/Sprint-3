@@ -1,6 +1,6 @@
-import { Search } from '../cmps/jointCMPs/search.jsx'
-import { Input } from '../cmps/missKeep/input.jsx'
-import { missKeepService } from '../services/missKeep-service.js'
+import { Search } from '../../cmps/jointCMPs/search.jsx'
+import { Input } from '../../cmps/missKeep/input.jsx'
+import { missKeepService } from '../../services/missKeep-service.js'
 
 export class KeepApp extends React.Component {
 
