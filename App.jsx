@@ -4,7 +4,7 @@ const { Route, Switch } = ReactRouterDOM;
 import { Header } from "./cmps/AppHeader.jsx";
 import {HomePage} from './pages/Home.jsx'
 import {KeepApp} from './pages/MissKeep.jsx'
-import {MailApp} from './pages/MissMail.jsx'
+import {MailApp} from './pages/MailApp.jsx'
 
 
 export class App extends React.Component {

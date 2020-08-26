@@ -13,6 +13,10 @@
     left : 50%;
 }
 
+.mail-preview {
+    border: 1px solid black;
+}
+
 
 /*HELPERS*/ 
 
@@ -26,4 +30,8 @@
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
