@@ -1,6 +1,7 @@
 import { Search } from '../cmps/jointCMPs/search.jsx'
 import { Input } from '../cmps/missKeep/input.jsx'
 import { missKeepService } from '../services/missKeep-service.js'
+import { NoteList } from '../cmps/missKeep/noteList.js'
 
 export class KeepApp extends React.Component {
 
@@ -37,6 +38,10 @@ export class KeepApp extends React.Component {
                 <Search />
                 <h1>KEEP APP</h1>
                 <Input></Input>
+                <main>
+                <NoteList notes={note} />
+                </main>
+
             </div>
         )
     }
