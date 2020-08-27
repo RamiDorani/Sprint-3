@@ -2,11 +2,14 @@ import { utils } from '../assets/utils/util.js'
 
 export const mailService = {
     query,
-    getMailById
+    getMailById,
+    toDeleteMails,
+    addMail,
+    getEmptyMail
 }
 
 
-var mails = [
+let gMails = [
     { id: utils.makeId(), sender: 'Adam', subject: 'Wassap?', body: 'Pick up!', isRead: false, sentAt: 1551133930594 },
     { id: utils.makeId(), sender: 'Shimon', subject: 'Meeting', body: 'Are you comming ?', isRead: true, sentAt: 1551133930594 },
     { id: utils.makeId(), sender: 'PANDORA', subject: 'Promosion', body: 'Ther is A great SALE today!!', isRead: false, sentAt: 1551133930594 },
@@ -18,12 +21,50 @@ var mails = [
 ]
 
 
+let deletedMails = [];
+
+
 function query() {
-    return Promise.resolve(mails);
+    return Promise.resolve(gMails);
 }
 
 
 function getMailById(id) {
-    const mail = mails.find(mail => mail.id === id)
+    const mail = gMails.find(mail => mail.id === id)
     return Promise.resolve(mail)
+}
+
+function toDeleteMails(mails) {
+        deletedMails = deletedMails.concat(mails);
+    
+    for(var i=0  ; i<mails.length  ; i++) {
+        gMails = gMails.filter(mail => mail.id!==mails[i].id)
+    }
+
+    console.log(deletedMails);
+}
+
+
+function addMail(mail) {
+   const newMail= _createMail(mail)
+    console.log('mail is added',newMail);
+    gMails.unshift(newMail);
+    console.log('this is the new mails list', gMails);
+}
+
+function _createMail(mail) {
+    const newMail = {
+        id : utils.makeId(),
+        sender : mail.to,
+        subject : mail.subject,
+        body : mail.body,
+        isRead : true,
+        sentAt : Date.now()
+    }
+    return newMail;
+}
+
+function getEmptyMail() {
+    const mail = { to: '', subject: '', body: ''};
+    return mail;
 }
