@@ -34,3 +34,4 @@ function addNewNote(note) {
     notes.unshift(newNote);
     return Promise.resolve(notes);
 }
+
