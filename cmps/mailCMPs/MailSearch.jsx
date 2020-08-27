@@ -3,7 +3,7 @@ export function Search(props) {
         <form>
              <section className="book-filter">
             <h3>filter</h3>
-            <input type="text" placeholder="Filter By Name" onChange={(ev) => {
+            <input type="text" placeholder="Filter By Mail Subject" onChange={(ev) => {
                 props.onFilter(ev.target.value)
             }}/>
     </section>

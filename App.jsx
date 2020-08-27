@@ -5,7 +5,7 @@ import { Header } from "./cmps/jointCMPs/AppHeader.jsx";
 import {HomePage} from './pages/Home.jsx'
 import {KeepApp} from './pages/keepPages/MissKeep.jsx'
 import {MailApp} from './pages/mailPages/MailApp.jsx'
-import {MailDetailes} from './pages/mailPages/MailDetailes.jsx'
+
 
 
 export class App extends React.Component {
@@ -15,7 +15,6 @@ export class App extends React.Component {
         <main>
           <Header></Header>
           <Switch>
-            <Route component={MailDetailes} path="/mail/:mailId" />
             <Route component={KeepApp} path="/keep" />
             <Route component={MailApp} path="/mail" />
             <Route component={HomePage} path="/" />
