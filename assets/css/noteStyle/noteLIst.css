@@ -16,3 +16,23 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+/* .note-txt-box {
+    width: 300px;
+    height: 250px;
+    background-color: #3b5998;
+    margin: 20px;
+    border-radius: 7px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+}
+.note-txt-value {
+    flex-grow: 3;
+    padding: 10px;
+}
+
+.note-txt-btns-box {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #3b5998;
+} */
