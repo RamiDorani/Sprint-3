@@ -10,5 +10,41 @@
 }
 
 .mail-preview {
+    position: relative;
+    max-width: 80vw;
     border: 1px solid black;
 }
+
+.read-mail {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.unread-mail {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.mail-info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.check-input {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+/* .mail-info :nth-child(1){
+    background-color: cornsilk;
+}
+
+.mail-info :nth-child(2){
+    background-color: rgb(107, 90, 23);
+}
+.mail-info :nth-child(3){
+    background-color: rgb(76, 22, 92);
+} */
